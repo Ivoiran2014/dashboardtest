@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="logo-container">
+            <img src="./images/icon.png" alt="Logo" class="main-logo">
+        </div>
+        <div class="user-info-container">
+            <div class="info-container">
+                <p>Solde:<span class="bold"> 800 300 FCFA</span></p>
+                <p>Solde disponible:<span class="bold"> 800 300 FCFA</span></p>
+            </div>
+
+            <div class="actions-container">
+                <div class="profile-info">
+                    <div class="profile-img">
+                        <img src="./images/logo-total.png" alt="Profile">
+                    </div>
+
+                    <div class="profile-text">
+                        <p class="total">Total Energie CI</p>
+                        <p>Npa487738CI</p>
+                    </div>
+
+                    <div class="arrow-down">
+                        <img src="./asset_dash/arrow_down.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="main-container-head">
+            <div class="left-side">
+                <h3>Serenity space</h3>
+            </div>
+
+            <div class="right-side">
+                <p>Avez vous des préoccupations ?</p>
+                <div class="preocupation-with-message">
+                    <input 
+                        type="text" 
+                        placeholder="Ecrivez votre message"
+                        class="preocupation"    
+                    >
+                    <img src="./asset_dash/send_msg.svg" class="send-msg" alt="">
+                </div>
+                <img src="./asset_dash/arrow_down.svg" class="arrow-down" alt="">
+            </div>
+        </div>
+        
+        <!-- First big section -->
+        <div class="main-container-foot">
+            <div class="second-section">
+                <div class="virtual-card">
+                    <div class="top">
+                        <div class="account">
+                            <p>Compte Principal</p>
+                            <p>PA4838CI</p>
+                        </div>
+                        
+                        <div class="currency">
+                            <p> Franc CFA</p>
+                            <img src="./asset_dash/arrow_down.svg" alt="">
+                        </div>
+                        
+                        <div class="lock">
+                            <img src="./svg/lock-light.svg" class="lock" alt="">
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <div class="solde">
+                            <p>Solde: 7 873 456 XOF</p>
+                            <p>Solde disponible: 6 873 456 XOF</p>
+                        </div>
+                    </div>
+                
+                </div>
+            
+            
+                <div class="more-elements">
+                    <h3>Operations rapides</h3>
+
+                    <div class="horizontal-toggle">
+                        <input type="radio" id="option1" name="toggle" checked>
+                        <label for="option1">Envoi d'argent</label>
+                    
+                        <input type="radio" id="option2" name="toggle">
+                        <label for="option2">Lien de paiement</label>
+                    
+                        <input type="radio" id="option3" name="toggle">
+                        <label for="option3">Rechargement</label>
+                    </div>
+            
+                    <h6>Bénéficiaires favoris</h6>
+                    <div class="favorite-users">
+            
+                        <div class="rounded-div ad">AD</div>
+                        <div class="rounded-div db">DB</div>
+                        <div class="rounded-div jk">JK</div>
+                        <div class="rounded-div ra">RA</div>
+                        <div class="rounded-div ya">YA</div>
+            
+                        <!-- Special + -->
+                        <div class="rounded-div plus">+</div>
+                    </div>
+            
+            
+                    <div class="beneficiary-name">
+                        <h6>Nom du bénéficiaire</h6>
+                        <input type="text" placeholder="">
+                    </div>
+            
+            
+                    <div class="sending-mode">
+                        <div class="sending-mode-text">
+                            <p>Mode d'envoi</p>
+                        </div>
+
+                        <div class="mobile-toggle">
+                            <input type="radio" id="option4" name="toggles">
+                            <label for="option4">
+                                <img src="/asset_dash/paynahlogo.svg" class="logo-label" alt="">
+                                Direct
+                            </label>
+                        
+                            <input type="radio" id="option5" name="toggles" checked>
+                            <label for="option5">Mobile Money</label>
+                        
+                            <input type="radio" id="option6" name="toggles">
+                            <label for="option6">Virement</label>
+                        </div>
+                    </div>
+            
+            
+                    <div class="input-with-image">
+                        <input type="text" placeholder="Numéro de compte">
+            
+                        <div class="placeholder-image">
+                            <img src="./images/orange.png" alt="" class="mobile-method">
+                            <img src="./images/mtn.png" alt="" class="mobile-method">
+                            <img src="./images/moov.png" alt="" class="mobile-method">
+                            <img src="./images/WAVE.png" alt="" class="mobile-method">
+                        </div>
+                    </div>
+            
+                    <div class="input-with-logo">
+                        <h5>Montant</h5>
+                        <input type="text" placeholder="XOF">
+                        <img src="./asset_dash/send_msg.svg" alt="Logo" class="send-msg">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Second Big section -->
+            <div class="third-section">
+                <div class="wallet-container">
+                    <div class="wallet-container-element corporate-salary">
+                        <div class="wallet-corporate-container">
+                            <div class="wallet-corporate">
+                                <img src="./asset_dash/wallet_spread.svg" alt="">
+                                <p>Salaire Corporate</p>
+                            </div>
+            
+                            <div class="wallet-dot-img">
+                                <img src="./asset_dash/3dot.svg" alt="">
+                            </div>
+                        </div>
+            
+                        <div class="available-salary">
+                            <p>Salaire disponible</p>
+                            <p><strong>2.873.456 XOF</strong></p>
+                        </div>
+                    </div>
+            
+                    <div class="wallet-container-element pompiste-salary">
+                        <div class="wallet-corporate-container">
+                            <div class="wallet-corporate">
+                                <img src="./asset_dash/wallet_spread.svg" alt="">
+                                <p>Salaire Pompiste</p>
+                            </div>
+            
+                            <div class="wallet-dot-img">
+                                <img src="./asset_dash/3dot.svg" alt="">
+                            </div>
+                        </div>
+            
+                        <div class="available-salary">
+                            <p>Salaire disponible</p>
+                            <p><strong>1.873.456 XOF</strong></p>
+                        </div>
+                    </div>
+            
+                    <div class="wallet-container-element factures">
+                        <div class="wallet-corporate-container">
+                            <div class="wallet-corporate">
+                                <img src="./asset_dash/wallet_spread.svg" alt="">
+                                <p>Factures</p>
+                            </div>
+            
+                            <div class="wallet-dot-img">
+                                <img src="./asset_dash/3dot.svg" alt="">
+                            </div>
+                        </div>
+            
+                        <div class="available-salary">
+                            <p>Salaire disponible</p>
+                            <p><strong>6.873.456 XOF</strong></p>
+                        </div>
+                    </div>
+            
+                    <div class="wallet-container-element add-wallet">
+                        <a href="#">+</a>
+                        <p>Ajouter un compte</p>
+                    </div>
+                </div>
+            
+                <div class="transaction-history">
+                    <div class="transaction-header">
+                        <h3>Transactions récentes</h3>
+                        <div class="more">
+                            <a href="#">Voir tout</a>
+                            <img src="./asset_dash/arrow_down.svg" alt="" class="arrowup">
+                        </div>
+
+                    </div>
+            
+                    <div class="transaction-body">
+                        <div class="transaction-header">
+                            <h6>ID Transaction</h6>
+                            <h6>Date</h6>
+                            <h6>Type</h6>
+                            <h6>Montant</h6>
+                            <h6>Statut</h6>
+                            <h6>Actions</h6>
+                        </div>
+            
+                        <div class="transaction-container">
+                            <div class="transaction-content">
+                                <p>24553FS3AS</p>
+                                <p>20-01-2024</p>
+                                <p>Envoie d'argent</p>
+                                <p>50 000 FCFA</p>
+                                <p class="success">Effectué</p>
+                                <div class="transaction-actions">
+                                    <img src="/asset_dash/3dot.svg" alt="">
+                                    <img src="/svg/corbeille.svg" alt="" srcset="">
+                                </div>
+                            </div>
+            
+                            <div class="transaction-content">
+                                <p>24553FS3AS</p>
+                                <p>20-01-2024</p>
+                                <p>Envoie d'argent</p>
+                                <p>50 000 FCFA</p>
+                                <p class="success">Effectué </p>
+                                <div class="transaction-actions">
+                                    <img src="/asset_dash/3dot.svg" alt="">
+                                    <img src="/svg/corbeille.svg" alt="" srcset="">
+                                </div>
+                            </div>
+            
+                            <div class="transaction-content">
+                                <p>24553FS3AS</p>
+                                <p>20-01-2024</p>
+                                <p>Lien de paiement</p>
+                                <p>50 000 FCFA</p>
+                                <p class="failure">En cours </p>
+                                <div class="transaction-actions">
+                                    <img src="/asset_dash/3dot.svg" alt="">
+                                    <img src="/svg/corbeille.svg" alt="" srcset="">
+                                </div>
+                            </div>
+            
+                            <div class="transaction-content">
+                                <p>24553FS3AS</p>
+                                <p>20-01-2024</p>
+                                <p>Lien de paiement</p>
+                                <p>50 000 FCFA</p>
+                                <p class="success">Effectué </p>
+                                <div class="transaction-actions">
+                                    <img src="/asset_dash/3dot.svg" alt="">
+                                    <img src="/svg/corbeille.svg" alt="" srcset="">
+                                </div>
+                            </div>
+            
+                            <div class="transaction-content">
+                                <p>24553FS3AS</p>
+                                <p>20-01-2024</p>
+                                <p>Envoie d'argent</p>
+                                <p>50 000 FCFA</p>
+                                <p class="success">Effectué </p>
+                                <div class="transaction-actions">
+                                    <img src="/asset_dash/3dot.svg" alt="">
+                                    <img src="/svg/corbeille.svg" alt="" srcset="">
+                                </div>
+                            </div>
+            
+                            <div class="transaction-content">
+                                <p>24553FS3AS</p>
+                                <p>20-01-2024</p>
+                                <p>Envoie d'argent</p>
+                                <p>50 000 FCFA</p>
+                                <p class="success">Effectué</p>
+                                <div class="transaction-actions">
+                                    <img src="/asset_dash/3dot.svg" alt="">
+                                    <img src="/svg/corbeille.svg" alt="" srcset="">
+                                </div>
+                            </div>
+            
+                            <div class="transaction-content">
+                                <p>24553FS3AS</p>
+                                <p>20-01-2024</p>
+                                <p>Envoie d'argent</p>
+                                <p>50 000 FCFA</p>
+                                <p class="success">Effectué </p>
+                                <div class="transaction-actions">
+                                    <img src="/asset_dash/3dot.svg" alt="">
+                                    <img src="/svg/corbeille.svg" alt="" srcset="">
+                                </div>
+                            </div>
+            
+                            <div class="transaction-content">
+                                <p>24553FS3AS</p>
+                                <p>20-01-2024</p>
+                                <p>Lien de paiement</p>
+                                <p>50 000 FCFA</p>
+                                <p class="expired">Expiré</p>
+                                <div class="transaction-actions">
+                                    <img src="/asset_dash/3dot.svg" alt="">
+                                    <img src="/svg/corbeille.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+
+            <div class="sellpoints">
+                <div class="sellpoints-container machine-payment">
+                    <div class="machine-payment-top">
+                        <h3>Points de vente</h3>
+                        <div class="more">
+                            <a href="#">Voir tout</a>
+                            <img src="./asset_dash/arrow_down.svg" alt="" class="arrowup">
+                        </div>
+                    
+                    </div>
+            
+                    <div class="machine-payment-bottom">
+                        <img src="/asset_dash/cashboard.svg" class="centered" alt="">
+                        <p>Aucun point de vente retrouvé</p>
+                    </div>
+                </div>
+            
+                <div class="sellpoints-container waiting-approval">
+                    <div class="waiting-approval-top">
+                        <h3>Approbations en attente</h3>
+                        <div class="more">
+                            <a href="#">Voir tout</a>
+                            <img src="./asset_dash/arrow_down.svg" alt="" class="arrowup">
+                        </div>
+                        
+                    </div>
+            
+                    <div class="waiting-approval-bottom">
+                        <img src="./asset_dash/push_logo.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer-container">
+        <div class="footer-logo">
+            <img src="./images/logo.png" alt="Logo">
+        </div>
+    
+        <div class="footer-images-container">
+            <!-- Container for multiple images -->
+            <div class="image">
+                <img src="./asset_dash/backward.svg" alt="Image 1">
+            </div>
+
+            <div class="image">
+                <img src="./asset_dash/svelte.svg" alt="Image 2">
+            </div>
+
+            <div class="image">
+                <img src="./asset_dash/wallet.svg" alt="Image 3">
+            </div>
+
+            <div class="image">
+                <img src="./asset_dash/feedback.svg" alt="Image 4">
+            </div>
+
+            <div class="image">
+                <img src="./asset_dash/location.svg" alt="Image 3">
+            </div>
+
+            <div class="image">
+                <img src="./asset_dash/receive_money.svg" alt="Image 5">
+            </div>
+
+            <div class="image">
+                <img src="./asset_dash/code.svg" alt="Image 6">
+            </div>
+            <!-- Add the rest of the images here -->
+        </div>
+    
+        <div class="footer-elements-container">
+            <!-- Container for 4 elements -->
+            <div class="element">
+                <img src="./asset_dash/moon.svg" alt="Image 3">
+            </div>
+            <div class="element">
+                <img src="./asset_dash/sound.svg" alt="Image 4">
+            </div>
+            <div class="element">
+                <img src="./asset_dash/setting.svg" alt="Image 5">
+            </div>
+            <div class="element square-box">
+                JV
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

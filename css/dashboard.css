@@ -1,0 +1,794 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+    padding-top: 10px;
+}
+
+.virtual-card{
+    background: url('../images/cover-card-2.png');
+    color: white;
+    /* width: 100px; */
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.send-msg{
+    background-color: #000000;
+}
+
+.arrowup{
+    transform: rotate(-90deg);
+}
+
+.mobile-method{
+    height: 50px;
+    width: 50px;
+}
+
+.main-logo{
+    height: 50px;
+    width: 50px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo-container,
+.user-info-container {
+    flex-grow: 1;
+}
+
+.user-info-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.info-container {
+    margin-right: 20px;
+}
+
+.actions-container {
+    background-color: #f2f2f2;
+    /* Slightly grey background */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 6px;
+    /* padding-top: 0;
+    padding-bottom: 0; */
+}
+
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-info>* {
+    margin-right: 25px;
+    /* Adjust the margin as needed */
+}
+
+/* To remove margin from the last child */
+.profile-info> :last-child {
+    margin-right: 0;
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+}
+
+.profile-text .total{
+    font-weight: bold;
+}
+
+.arrow-down img {
+    width: 20px;
+    /* Adjust size if necessary */
+    height: 20px;
+    /* Adjust size if necessary */
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0; /* Grey background color */
+    border-radius: 40px; /* Slightly rounded border */
+    padding: 20px; /* Add padding for spacing inside the container */
+    margin-top: 20px;
+}
+
+.main-container-head,
+.main-container-foot {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.main-container-head .left-side,
+.main-container-head .right-side,
+.main-container-foot>div {
+    flex: 1;
+}
+
+.left-side h3{
+    color: rgb(193, 193, 193);
+}
+
+.right-side {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.right-side p,
+.right-side .preocupation-with-message, .preocupation-with-message img {
+    display: inline-block;
+}
+
+.right-side p{
+    font-weight: bold;
+    margin-left: 14px;
+}
+
+.right-side>* {
+    margin-right: 5px;
+}
+
+.right-side .arrow-down{
+    height: 30px;
+    width: 30px;
+    transform: translateY(45%);
+}
+
+
+.preocupation-with-message {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    top: 8%;
+}
+
+.preocupation-with-message input {
+    flex-grow: 1;
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    background-color: #f0f0f0;
+    opacity: .5;
+    /* margin-right: 5px; */
+    width: 100%;
+}
+
+.preocupation-with-message img {
+    /* margin-left: 5px; */
+    /* Add some space between images */
+    position: absolute; /* Position the image absolutely */
+    right: 20px; 
+    top: 34%; 
+    transform: translateY(-50%); 
+}
+
+.right-side .arrow-down{
+    width: 25px;
+    height: 25px;
+    top: 50%;
+}
+
+.second-section {
+    flex: 1;
+    max-width: 30%;
+    margin-right: 20px;
+}
+
+.lock{
+    padding: 5px;
+}
+
+.currency {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: black;
+    /* width: 10px; */
+}
+
+.currency p,
+.currency img {
+    margin: 0;
+    /* Remove default margins */
+    vertical-align: middle;
+}
+
+.second-section .lock img{
+    filter: invert(100%);
+}
+
+.virtual-card {
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-rows: auto auto;
+    /* Two rows: one for top and one for bottom */
+    gap: 10px;
+    /* Optional: Add gap between rows */
+}
+
+.virtual-card .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Align items vertically center */
+}
+
+.virtual-card .top>* {
+    margin-right: 10px;
+    /* Adjust margin as needed */
+}
+
+.virtual-card .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Align items vertically center */
+}
+
+.more-elements {
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 14px;
+}
+
+.more-elements h3 {
+    margin-bottom: 10px;
+}
+
+.horizontal-toggle {
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.horizontal-toggle input[type="radio"] {
+    display: none;
+}
+
+.horizontal-toggle label {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+    border-radius: 0;
+}
+
+.horizontal-toggle label:first-child {
+    background-color: rgb(232, 226, 226);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.horizontal-toggle input[type="radio"]:checked+label {
+    background-color: rgb(250, 243, 243);
+    color: black;
+}
+
+.more-elements p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.more-elements .rounded-div {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: lightgray;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.more-elements .ad {
+    background-color: orange;
+}
+
+.more-elements .db {
+    background-color: rgb(152, 152, 250);
+}
+
+.more-elements .jk {
+    background-color: cyan;
+}
+
+.more-elements .ra {
+    background-color: rgb(44, 225, 44);
+}
+
+.more-elements .ya {
+    background-color: pink;
+}
+
+.more-elements .plus {
+    background-color: rgba(224, 214, 214, 0.5);
+    /* Transparent white */
+    color: black;
+}
+
+.beneficiary-name {
+    border-radius: 30px;
+    background-color: white;
+    border: 1px solid #00000020;
+}
+
+.beneficiary-name h6 {
+    position: relative;
+    top: -32px;
+    right: -50px;
+    padding: 0;
+}
+
+.beneficiary-name input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: calc(100% - 20px);
+}
+
+
+.sending-mode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #00000020;
+    /* Slightly transparent black border */
+    border-radius: 30px;
+    padding: 10px;
+    background-color: white;
+}
+
+.sending-mode-text p {
+    margin: 0;
+    padding-right: 10px;
+}
+
+.mobile-toggle {
+    display: flex;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.mobile-toggle input[type="radio"] {
+    display: none;
+}
+
+.mobile-toggle label {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+/* Style for selected label */
+.mobile-toggle input[type="radio"]:checked+label {
+    background-color: rgb(197, 193, 193);
+    border-radius: 20px;
+}
+
+.mobile-toggle .logo-label{
+    height: 20px;
+    width: 20px;
+}
+
+.input-with-image {
+    display: flex;
+    /* Display as flexbox */
+    align-items: center;
+    /* Center align items vertically */
+    border-radius: 30px;
+    /* Rounded corners */
+    background-color: #f4f4f4;
+    /* Light grey background */
+    padding: 10px;
+    /* Add padding */
+}
+
+.input-with-image input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: #f4f4f4;
+}
+
+.placeholder-image {
+    display: flex;
+    /* Display as flexbox */
+    margin-left: 10px;
+    /* Add margin between input and images */
+}
+
+.placeholder-image img {
+    margin-right: 5px;
+    /* Add margin between images */
+}
+
+.input-with-logo {
+    border-radius: 30px;
+    background-color: #f0f0f0; /* Light background */
+    padding: 10px; /* Add padding */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+}
+
+.input-with-logo h5 {
+    margin: 0; /* Remove default margin */
+    margin-right: 10px; /* Add right margin for spacing */
+}
+
+.input-with-logo input[type="text"] {
+    border: none; /* Remove border */
+    background-color: transparent; /* Transparent background */
+    outline: none; /* Remove outline */
+}
+
+.input-with-logo .send-msg {
+    margin-left: auto; /* Move the image to the right */
+}
+
+.input-with-logo {
+    border-radius: 30px;
+    background-color: #f0f0f0;
+    /* Light background */
+    padding: 10px;
+    /* Add padding */
+    display: flex;
+    /* Use flexbox */
+    align-items: center;
+    /* Center items vertically */
+}
+
+.input-with-logo h5 {
+    margin: 0;
+    position: relative;
+    top: -32px;
+    right: -50px;
+    padding: 0;
+}
+
+.input-with-logo input[type="text"] {
+    border: none;
+    /* Remove border */
+    background-color: transparent;
+    /* Transparent background */
+    outline: none;
+    /* Remove outline */
+    flex: 1;
+    /* Take up remaining space */
+}
+
+.input-with-logo .send-msg {
+    margin-left: auto;
+    /* Move the image to the right */
+}
+
+.more-elements .favorite-users {
+    margin-bottom: 20px;
+}
+
+.more-elements .beneficiary-name,
+.more-elements .sending-mode,
+.more-elements .input-with-image,
+.more-elements .input-with-logo {
+    margin-bottom: 20px;
+}
+
+.more-elements .input-with-image input,
+.more-elements .input-with-logo input {
+    width: calc(100% - 30px);
+    /* Adjust width based on padding */
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.more-elements .input-with-image .placeholder-image img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.more-elements .input-with-logo p {
+    margin-bottom: 5px;
+}
+
+.more-elements .input-with-logo .send-msg {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.third-section {
+    flex: 3;
+    max-width: 60%;
+    margin-right: 20px;
+}
+
+.wallet-container {
+    display: flex;
+    justify-content: space-between;
+    /* Spread elements horizontally */
+}
+
+.wallet-container-element {
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 30px;
+    height: 200px;
+    /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.wallet-corporate-container,
+.available-salary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wallet-corporate p,
+.available-salary p {
+    margin: 0;
+}
+
+.add-wallet{
+    width: 280px;
+    height: 200px;
+    padding: 30px;
+}
+
+.wallet-container-element.add-wallet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #000;
+}
+
+.wallet-container-element.add-wallet a {
+    text-decoration: none;
+}
+
+.transaction-history {
+    margin-top: 20px;
+    border-radius: 30px;
+    border: 2px solid #ccc;
+    /* Example border color */
+    padding: 20px;
+    /* Adjust padding as needed */
+    background-color: #fff;
+    height: 77%;
+}
+
+.transaction-header a {
+    text-decoration: none;
+    /* Remove underline */
+    margin-right: 0;
+    /* Remove margin */
+    color: lightgrey;
+}
+
+.transaction-content .success {
+    border-radius: 10px;
+    /* Add rounded corners */
+    background-color: #4CAF50;
+    /* Set background color to green */
+    color: #fff;
+    /* Set text color to white */
+    padding: 5px 10px;
+    /* Add padding for spacing */
+}
+
+
+.transaction-content .failure {
+    border-radius: 10px;
+    /* Add rounded corners */
+    background-color: #FF69B4;
+    /* Set background color to pink */
+    color: #fff;
+    /* Set text color to white */
+    padding: 5px 10px;
+    /* Add padding for spacing */
+}
+
+.transaction-content .expired {
+    border-radius: 10px;
+    /* Add rounded corners */
+    background-color: #808080;
+    /* Set background color to grey */
+    color: #fff;
+    /* Set text color to white */
+    padding: 5px 10px;
+    /* Add padding for spacing */
+}
+
+.transaction-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.machine-payment-top a,.waiting-approval a{
+    text-decoration: none;
+    color: lightgray;
+}
+
+.machine-payment-top, .waiting-approval-top {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.machine-payment-bottom, .waiting-approval-bottom {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.machine-payment-bottom img.centered {
+    top: 20%;
+}
+
+
+.transaction-body {
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.transaction-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.transaction-content:last-child {
+    border-bottom: none;
+}
+
+.transaction-content p {
+    margin: 0;
+}
+
+.transaction-actions {
+    display: flex;
+    align-items: center;
+}
+
+.transaction-actions img {
+    margin-right: 10px;
+}
+
+.transaction-actions p {
+    margin: 0;
+    cursor: pointer;
+}
+
+.sellpoints {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    max-width: 20%;
+}
+
+.sellpoints-container {
+    border-radius: 30px;
+    /* Rounded border */
+    background-color: #fff;
+    /* Light background color */
+    padding: 20px;
+    /* Add padding for spacing */
+    height: 48%;
+}
+
+
+
+.waiting-approval {
+    margin-top: auto;
+    /* Push this div to the bottom */
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    /* Spread items evenly */
+    align-items: center;
+    /* Align items vertically in the center */
+}
+
+.footer-logo,
+.footer-images-container,
+.footer-elements-container {
+    display: flex;
+    /* Make children display horizontally */
+}
+
+.footer-logo img {
+    width: 100px;
+    /* Adjust the size */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.image {
+    margin: 0 10px;
+    /* Add space between images */
+}
+
+.element {
+    margin: 0 10px;
+    /* Add space between elements */
+}
+
+.square-box {
+    width: 50px;
+    /* Adjust the size */
+    height: 50px;
+    /* Adjust the size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdaa48;
+    border-radius: 20%;
+}
